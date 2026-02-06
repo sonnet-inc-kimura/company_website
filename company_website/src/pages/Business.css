@@ -1,0 +1,119 @@
+.business-page {
+  padding-top: 70px;
+}
+
+.intro-text {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(0, 191, 255, 0.05));
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.intro-text p {
+  font-size: 17px;
+  line-height: 2;
+  color: var(--text-color);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.skill-category {
+  padding: 30px;
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.skill-category h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--primary-light);
+}
+
+.skill-category ul {
+  list-style: none;
+}
+
+.skill-category ul li {
+  font-size: 15px;
+  color: var(--text-color);
+  padding: 8px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skill-category ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.tech-skills {
+  background: var(--bg-light);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.tech-category {
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 102, 204, 0.15);
+}
+
+.tech-category h3 {
+  font-size: 22px;
+  color: white;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  padding: 12px 20px;
+  margin: -30px -30px 20px;
+  border-radius: 12px 12px 0 0;
+}
+
+.tech-category p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .skills-grid,
+  .tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-text {
+    padding: 20px;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+  }
+}

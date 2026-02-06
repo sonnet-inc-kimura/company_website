@@ -1,0 +1,70 @@
+.message-page {
+  padding-top: 70px;
+}
+
+.message-content {
+  background: white;
+}
+
+.message-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.message-body p {
+  font-size: 17px;
+  line-height: 2;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.highlight-text {
+  font-size: 20px !important;
+  font-weight: 600;
+  color: var(--primary-color);
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(0, 191, 255, 0.05));
+  border-left: 4px solid var(--primary-color);
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.signature {
+  margin-top: 50px;
+  text-align: right;
+  border-top: 2px solid var(--border-color);
+  padding-top: 30px;
+}
+
+.signature .date {
+  font-size: 15px;
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+.signature .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .message-body {
+    padding: 25px;
+  }
+
+  .message-body p {
+    font-size: 16px;
+  }
+
+  .highlight-text {
+    font-size: 18px !important;
+    padding: 20px;
+  }
+}
